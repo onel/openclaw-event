@@ -81,12 +81,12 @@ In this case glm does not.
 
 ![](<setup 10.png>)
 
-	10.1. Open telegram app, search for `BotFather` and follow the steps.
+10.1. Open telegram app, search for `BotFather` and follow the steps.
 ![](<telegram1.png>)
 ![](<telegram2.png>)
-	10.2. When it asks you for an username it needs to be unique in the Telegram world. So you might need a long one.
+10.2. When it asks you for an username it needs to be unique in the Telegram world. So you might need a long one.
 ![](<telegram3.png>)
-	10.3 Done
+10.3 Done
 ![](<telegram4.png>)
 
 11. Copy the code and paste it back
@@ -98,7 +98,7 @@ Both Brave and exa are good. You'll need to open a free account with them and ge
 
 ![](<setup 12.png>)
 
-13. Choose a unique name for your bot
+13. This is an example using exa.ai
 
 ![](<setup 13.png>)
 
