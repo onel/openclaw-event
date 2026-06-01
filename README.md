@@ -1,6 +1,6 @@
 # OpenClaw Event Series
 
-A three-part hands-on workshop series from [Give(a)Go](https://giveago.co) and [The AI Collective](https://theaicollective.ie), exploring [OpenClaw](https://github.com/openclaw/openclaw) - a local AI agent that connects to your messaging apps and actually does things.
+A three-part hands-on workshop series from [Give(a)Go](https://giveago.co) and [The AI Collective](https://aicollective.com), exploring [OpenClaw](https://github.com/openclaw/openclaw) - a local AI agent that connects to your messaging apps and actually does things.
 
 Each event builds on the previous one. No engineering background required.
 
