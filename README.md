@@ -1,0 +1,47 @@
+# OpenClaw Event Series
+
+A three-part hands-on workshop series from [Give(a)Go](https://giveago.co) and [The AI Collective](https://theaicollective.ie), exploring [OpenClaw](https://github.com/openclaw/openclaw) - a local AI agent that connects to your messaging apps and actually does things.
+
+Each event builds on the previous one. No engineering background required.
+
+---
+
+## Events
+
+### Event 1 - Setting It Up
+
+**[lu.ma/ig36juui](https://lu.ma/ig36juui)**
+
+Baseline, 3rd Floor, 61 Thomas St, The Liberties, Dublin 8
+11:00 AM - 4:00 PM
+
+Install OpenClaw, connect it to a messaging app (Telegram or WhatsApp), write your agent's personality, and get at least one real skill running by the end of the day.
+
+[Event guide and materials](./1_setting_it_up/README.md)
+
+---
+
+### Event 2 - Making It Useful
+
+Coming soon.
+
+[Materials](./2_making_it_useful/)
+
+---
+
+### Event 3 - Applied Use Cases
+
+Coming soon.
+
+[Materials](./3_applied_usecases/)
+
+---
+
+## About OpenClaw
+
+OpenClaw is a personal AI agent that runs on your own machine - laptop, Mac Mini, Raspberry Pi, or a cloud server. It reads and writes files, browses the web, sends emails, manages your calendar, runs code, and connects to almost any app you already use. You interact with it through chat apps you already have: WhatsApp, Telegram, Discord, Signal, iMessage.
+
+- Docs: [docs.openclaw.ai](https://docs.openclaw.ai)
+- GitHub: [github.com/openclaw/openclaw](https://github.com/openclaw/openclaw)
+- Skills marketplace: [clawhub.ai](https://clawhub.ai)
+- Community Discord: [discord.com/invite/clawd](https://discord.com/invite/clawd)
