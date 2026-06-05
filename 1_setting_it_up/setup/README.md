@@ -36,7 +36,7 @@ If you get "command not found", close and reopen your terminal - the PATH update
 
 ## Run the onboarding wizard
 
-1. Run the command
+1. Run the command depending on your OS
 
 ![](<setup.png>)
 
