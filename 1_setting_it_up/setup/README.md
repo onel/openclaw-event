@@ -82,12 +82,12 @@ In this case glm does not.
 ![](<setup 10.png>)
 
 10.1. Open telegram app, search for `BotFather` and follow the steps.
-![](<telegram1.png>)
-![](<telegram2.png>)
+![](<telegram1.jpeg>)
+![](<telegram2.jpeg>)
 10.2. When it asks you for an username it needs to be unique in the Telegram world. So you might need a long one.
-![](<telegram3.png>)
+![](<telegram3.jpeg>)
 10.3 Done
-![](<telegram4.png>)
+![](<telegram4.jpeg>)
 
 11. Copy the code and paste it back
 
