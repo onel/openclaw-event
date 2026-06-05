@@ -56,7 +56,7 @@ If you get "command not found", close and reopen your terminal - the PATH update
 
 ![](<setup 5.png>)
 
-6. Get the api from your account and paste it in here.
+6. Get the API key from your Tensorix account and paste it in here. If you haven't created your account yet, sign up with the link provided at the event to unlock your free credits.
 
 ![](<setup 6.png>)
 

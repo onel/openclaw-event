@@ -35,14 +35,21 @@ You need **v22.19 or higher**. v24 is recommended. If you don't have it or your 
 
 ### Get an API key
 
-OpenClaw needs access to an AI model to think and respond. 
+OpenClaw needs access to an AI model to think and respond.
 
 We've partnered with **Tensorix.ai** to give every attendee free credits for open source models - no billing setup needed.
 
-<a href="[[tensorix signup link]]" style="display:inline-block;padding:10px 20px;background:#2563eb;color:#fff;font-weight:bold;border-radius:6px;text-decoration:none;">Get your free Tensorix credits →</a>
+#### Setting up your Tensorix account
 
-Sign up and copy your API key before arriving. **You'll paste it into the onboarding wizard.**
+1. Use the signup link provided at the event. You will need to create a new account for this to work
+2. After Signup, go to **API Keys** and:
+- enter a name for they (eg. my openclaw API key)
+- click Generate Key
+3. Copy the key - it starts with `tx-` - and keep it somewhere handy
 
+**You'll paste this key into the onboarding wizard when you install OpenClaw.**
+
+#### Other providers
 If you'd prefer to use a provider you already have an account with, any of these work too:
 
 | Provider | Where to get it |
@@ -66,55 +73,15 @@ Follow the [step-by-step setup guide](./setup/README.md) - it covers the install
 
 ---
 
-## 4. Connect a Messaging App
+## Other things
 
-This is the step that makes it feel real. Instead of talking to your agent through a browser tab, you'll talk to it from your phone.
+### Choosing a Model
 
-### Telegram (easiest - start here)
-
-Telegram only requires a bot token, which takes about 2 minutes to get.
-
-1. Open Telegram and search for **@BotFather**
-2. Send `/newbot` and follow the prompts - give it a name and a username
-3. BotFather gives you a token that looks like `7123456789:AAF...`
-4. In your OpenClaw dashboard, go to **Channels → Telegram** and paste the token
-5. Start a chat with your new bot in Telegram and send a message
-
-That's it. Your agent is now on Telegram.
-
-### WhatsApp
-
-WhatsApp requires a bit more setup because it connects through your existing WhatsApp account (not a dedicated bot account).
-
-1. In the OpenClaw dashboard, go to **Channels → WhatsApp**
-2. A QR code will appear
-3. On your phone, open WhatsApp → **Settings → Linked Devices → Link a Device**
-4. Scan the QR code
-5. Wait for the connection to confirm, then send yourself a message
-
-**Heads up:** WhatsApp occasionally drops the connection and needs re-pairing. This is a known quirk. If messages stop coming through, re-scan the QR code.
-
-### Pairing and access control
-
-By default, only paired senders can message your agent. You can manage the allowlist under **Channels → Pairing** in the dashboard. This is worth setting up if you don't want anyone who gets your bot's Telegram username to be able to use it.
-
----
-
-## 5. Choosing a Model
-
-If you followed the Tensorix setup path, you're already running **z-ai/glm-5.1** - no further action needed.
+When setting up OpenClaw you will be asked what model you prefer.
 
 You can change the model any time in the dashboard under **Settings → Model**. The model ID format is `provider/model-id`, for example `anthropic/claude-sonnet-4-6` or `openai/gpt-4o`.
 
 **A note on costs:** The Tensorix free credits cover normal use during the event. If you switch to a paid provider (Anthropic, OpenAI, etc.), API usage isn't free - a reasonably active day typically costs $0.50–$2. Set a spend limit in your provider's dashboard if you're concerned about runaway costs.
-
----
-
-## 6. Writing Your SOUL.md
-
-SOUL.md is the file that defines your agent's personality - its tone, values, how it communicates, and what kind of assistant it is. OpenClaw reads this file at the start of every session.
-
-Without a SOUL.md your agent is generic. With one, it feels like yours.
 
 ### Where it lives
 
@@ -164,7 +131,16 @@ Changes to SOUL.md take effect the next time a new session starts - send a messa
 
 ---
 
-## 7. Setting Up MEMORY.md
+## 4. Writing Your SOUL.md
+
+SOUL.md is the file that defines your agent's personality - its tone, values, how it communicates, and what kind of assistant it is. OpenClaw reads this file at the start of every session.
+
+Without a SOUL.md your agent is generic. With one, it feels like yours.
+
+
+---
+
+## 5. Setting Up MEMORY.md
 
 OpenClaw has a set of workspace files that control different aspects of your agent. MEMORY.md is where curated long-term memory lives - facts and context you want the agent to always have access to.
 
@@ -196,7 +172,7 @@ The agent will also update MEMORY.md itself over time as it learns things worth 
 
 ---
 
-## 8. Your First Skill
+## 6. Your First Skill
 
 Skills are plugins that extend what your agent can do. They're plain text files - usually a markdown doc and some code - that live in your agent's workspace.
 
@@ -232,7 +208,7 @@ One of the wildest things about OpenClaw: the agent can write its own skills. If
 
 ---
 
-## 9. Common Pain Points & Fixes
+## 7. Common Pain Points & Fixes
 
 Things people hit during setup, and how to get past them.
 
@@ -283,7 +259,7 @@ The Gateway runs inside WSL2 but is accessible from Windows. Try `http://localho
 
 ---
 
-## 10. What's Next: Event Series Preview
+## 8. What's Next: Event Series Preview
 
 This is the first of three events. Each one builds on the last.
 
@@ -300,7 +276,7 @@ Keep an eye on [luma.com/giveago](https://lu.ma/giveago) for the next event date
 
 ---
 
-## 11. Useful Links
+## 9. Useful Links
 
 | | |
 |---|---|
