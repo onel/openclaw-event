@@ -35,9 +35,9 @@ Install OpenClaw, connect it to a messaging app (Telegram or WhatsApp), write yo
 
 ### Event 2 - Making It Useful
 
-Coming soon.
+Go deeper: add a search provider so your agent can read the live web, sharpen your SOUL.md, give it a real memory, install a useful set of skills, and connect it to your other apps through integrations. Then turn those pieces into workflows that run every day.
 
-[Materials](./2_making_it_useful/)
+[Event guide and materials](./2_making_it_useful/README.md)
 
 ---
 
