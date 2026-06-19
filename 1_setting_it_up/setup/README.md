@@ -52,11 +52,11 @@ If you get "command not found", close and reopen your terminal - the PATH update
 
 ![](<setup 4.png>)
 
-5. Add the Tensorix API base URL: `https://api.tensorix.ai/v1`
+5. Add the Tensorx API base URL: `https://api.tensorx.ai/v1`
 
 ![](<setup 5.png>)
 
-6. Get the API key from your Tensorix account and paste it in here. If you haven't created your account yet, sign up with the link provided at the event to unlock your free credits.
+6. Get the API key from your Tensorx account and paste it in here. If you haven't created your account yet, sign up with the link provided at the event to unlock your free credits.
 
 ![](<setup 6.png>)
 

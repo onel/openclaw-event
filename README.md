@@ -12,7 +12,7 @@ Each event builds on the previous one. No engineering background required.
   <tr>
     <td align="center"><img src="https://github.com/user-attachments/assets/774a46d5-27a0-490c-b7d0-e65fcbbfa358" alt="Browser Use" height="60"></td>
     <td align="center"><img src="https://bronto.io/assets/bronto-logo-DbWPAuNL.png" alt="Bronto" height="60"></td>
-    <td align="center"><img src="https://tensorix.ai/images/logo-full.jpg" alt="Tensorix" height="60"></td>
+    <td align="center"><img src="https://tensorx.ai/wp-content/uploads/2026/05/tensorx-logo.svg" alt="Tensorx" height="60"></td>
   </tr>
 </table>
 

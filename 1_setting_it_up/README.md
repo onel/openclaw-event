@@ -37,9 +37,9 @@ You need **v22.19 or higher**. v24 is recommended. If you don't have it or your 
 
 OpenClaw needs access to an AI model to think and respond.
 
-We've partnered with **Tensorix.ai** to give every attendee free credits for open source models - no billing setup needed.
+We've partnered with **Tensorx.ai** to give every attendee free credits for open source models - no billing setup needed.
 
-#### Setting up your Tensorix account
+#### Setting up your Tensorx account
 
 1. Use the signup link provided at the event. You will need to create a new account for this to work
 2. After Signup, go to **API Keys** and:
@@ -59,7 +59,7 @@ If you'd prefer to use a provider you already have an account with, any of these
 | **Google** | [aistudio.google.com](https://aistudio.google.com) |
 | **Other** | [docs.openclaw.ai/providers](https://docs.openclaw.ai/providers) - 60+ supported |
 
-The rest of this guide assumes Tensorix. If you're using a different provider, the steps are the same - you'll just pick your provider from the list instead of entering a custom URL.
+The rest of this guide assumes Tensorx. If you're using a different provider, the steps are the same - you'll just pick your provider from the list instead of entering a custom URL.
 
 ### Windows users
 
@@ -81,7 +81,7 @@ When setting up OpenClaw you will be asked what model you prefer.
 
 You can change the model any time in the dashboard under **Settings → Model**. The model ID format is `provider/model-id`, for example `anthropic/claude-sonnet-4-6` or `openai/gpt-4o`.
 
-**A note on costs:** The Tensorix free credits cover normal use during the event. If you switch to a paid provider (Anthropic, OpenAI, etc.), API usage isn't free - a reasonably active day typically costs $0.50–$2. Set a spend limit in your provider's dashboard if you're concerned about runaway costs.
+**A note on costs:** The Tensorx free credits cover normal use during the event. If you switch to a paid provider (Anthropic, OpenAI, etc.), API usage isn't free - a reasonably active day typically costs $0.50–$2. Set a spend limit in your provider's dashboard if you're concerned about runaway costs.
 
 ### Where it lives
 
