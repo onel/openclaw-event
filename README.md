@@ -43,9 +43,9 @@ Go deeper: add a search provider so your agent can read the live web, sharpen yo
 
 ### Event 3 - Applied Use Cases
 
-Coming soon.
+Take everything you've built and point it at real work. A library of self-contained recipes: connect a couple of apps through Composio, paste a setup prompt, drop in a small rules block, and you have a working agent for a specific job - personal ops, GTM and content, support triage, and more.
 
-[Materials](./3_applied_usecases/)
+[Event guide and materials](./3_applied_usecases/README.md)
 
 ---
 
