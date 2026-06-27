@@ -8,6 +8,18 @@ This event is a library, not a lecture. Each use case below is a self-contained 
 
 ---
 
+## Sponsors
+
+<table>
+  <tr>
+    <td align="center"><img src="https://github.com/user-attachments/assets/774a46d5-27a0-490c-b7d0-e65fcbbfa358" alt="Browser Use" height="60"></td>
+    <td align="center"><img src="https://bronto.io/assets/bronto-logo-DbWPAuNL.png" alt="Bronto" height="60"></td>
+    <td align="center"><img src="https://tensorx.ai/wp-content/uploads/2026/05/tensorx-logo.svg" alt="Tensorx" height="60"></td>
+  </tr>
+</table>
+
+---
+
 ## How these recipes work
 
 Every recipe follows the same three-step shape, so once you have done one the rest are fast:
