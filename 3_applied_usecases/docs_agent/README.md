@@ -46,13 +46,16 @@ You are my Docs Agent for the repo [owner/repo]. Your job is to keep the
 docs in sync with the code by watching merged PRs and new releases. You never
 change docs without my approval.
 
-First, set yourself up. Read these two files straight from GitHub and install
-them into your workspace exactly as written:
-- https://github.com/onel/openclaw-event/blob/master/3_applied_usecases/docs_agent/AGENTS.md
-  (append its contents to your AGENTS.md - these are your permissions and guardrails)
-- https://github.com/onel/openclaw-event/blob/master/3_applied_usecases/docs_agent/HEARTBEAT.md
-  (use it as your HEARTBEAT.md so this runs on a schedule)
-Replace [owner/repo] in those files with my actual repo. Confirm what you
+First, set yourself up:
+- Read https://github.com/onel/openclaw-event/blob/master/3_applied_usecases/docs_agent/AGENTS.md
+  and append its contents to your AGENTS.md - these are your permissions and guardrails.
+- Set up the schedule yourself, don't make me run a command. Either: read
+  https://github.com/onel/openclaw-event/blob/master/3_applied_usecases/docs_agent/HEARTBEAT.md
+  and use it as your HEARTBEAT.md (a watch every 6h), OR, if I say I want a fixed
+  daily time instead, create a cron job with your cron tool: schedule
+  "0 9 * * 1-5", timezone [my timezone], session isolated, that runs this same
+  check. Use one or the other, not both.
+Replace [owner/repo] (and the timezone) with my actual values. Confirm what you
 installed before doing anything else.
 
 Then, when I ask you to check (or on your schedule), do this:
@@ -130,7 +133,7 @@ You do not need to paste these in by hand. The setup prompt above already tells 
 - When I drop items from a plan, save the rule to memory so future plans skip them.
 ```
 
-**The schedule.** Checking merged PRs and releases is an interval watch, so use `HEARTBEAT.md`:
+**The schedule.** You don't run anything by hand: the setup prompt has the agent install the schedule itself. By default it's an interval watch (`HEARTBEAT.md`), checking every 6h:
 
 ```markdown
 tasks:
@@ -141,7 +144,7 @@ tasks:
     and ask me to confirm. If nothing new or nothing is doc-worthy, do nothing."
 ```
 
-If you would rather it run at a fixed time (say, once each weekday morning), use a cron job instead:
+If you'd rather it run at a fixed time (say, each weekday morning), tell the agent so in the setup prompt and it creates a cron job itself with its cron tool, equivalent to:
 
 ```bash
 openclaw cron create "0 9 * * 1-5" \

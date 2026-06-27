@@ -1,5 +1,19 @@
 # OpenClaw: Applied Use Cases
 
+*Event 3 of 3 · Give(a)Go x AI Collective Dublin · Sponsored by Bronto, BrowserUse, Tensorix*
+
+📍 **Location:** Baseline, 3rd Floor, 61 Thomas St, The Liberties, Dublin 8
+
+🕒 **Time:** 11:00 AM – 5:00 PM
+
+📅 **Date:** 27 June 2026
+
+---
+
+**GitHub repo:** github.com/onel/openclaw-event
+
+---
+
 ### A guide for the Give(a)Go event series · Event 3 of 3
 
 In Event 1 you set OpenClaw up. In Event 2 you made it useful: search, a sharper SOUL.md, real memory, skills, and integrations. Event 3 is where it stops being a toy and starts removing real work from your plate.
