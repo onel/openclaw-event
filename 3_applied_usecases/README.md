@@ -75,7 +75,7 @@ From then on, every recipe can use any app you have connected. If a recipe needs
 | 5 | [Event Radar](./event_radar.md) | Watches Luma / event sources and pings you about ones that match | Community, networking, GTM |
 | 6 | [Weather & Conditions Alert](./weather_alert.md) | Watches conditions and only speaks up when a threshold is crossed | Outdoor, ops, logistics |
 | 7 | [House Search Agent](./house_search_agent.md) | Scores new property listings against your criteria and summarizes the keepers | Anyone house-hunting |
-| 8 | [Docs Agent](./docs_agent/README.md) | Watches merged PRs and releases, plans the doc updates, and opens issues + PRs | Engineers, technical writers |
+| 8 | [Docs Agent](./docs_agent/README.md) | Watches merged PRs and releases, plans doc updates as GitHub issues, revises on your comments, and opens PRs on approval | Engineers, technical writers |
 
 More recipes will be added over time. The template below is what each one follows, so you can write your own.
 
