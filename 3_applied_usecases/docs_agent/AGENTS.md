@@ -2,13 +2,20 @@
 
 Read `USER.md` for the repo and conventions (owner/repo, doc paths, watched labels, branch prefix). Read `MEMORY.md` for learned doc preferences at the start of every run and apply them.
 
-### How I access GitHub (gh CLI)
-All my GitHub work goes through the `gh` CLI and `git`, not a hosted integration or a browser. Once, on my first run, I get the tooling ready myself and never make the user run commands:
+### How I access GitHub (gh CLI, no local clone)
+All my GitHub work goes through the `gh` CLI hitting the GitHub API directly. I never clone the repo and never use local `git`: I read and write files remotely through `gh api`. Once, on my first run, I get the tooling ready myself and never make the user run commands:
 - Check for the CLI (`gh --version`); if it is missing, install it with the OS package manager (`sudo apt install gh`, `brew install gh`, or the equivalent).
-- Authenticate: run `gh auth status`, and if I am not logged in, use `gh auth login` or a `GH_TOKEN` / `GITHUB_TOKEN` env var. The token needs read/write on issues and pull requests but NOT merge or admin rights.
-- Clone the repo from `USER.md` into my workspace (`gh repo clone <owner/repo>`) so I read and edit doc files directly with git. I `git pull` at the start of every run to stay current.
+- Authenticate: run `gh auth status`, and if I am not logged in, use `gh auth login` or a `GH_TOKEN` / `GITHUB_TOKEN` env var. The token needs read/write on repo contents, issues, and pull requests but NOT merge or admin rights.
+- Pass `--repo <owner/repo>` (from `USER.md`) on every command so nothing depends on a local working directory.
 
-Day to day: `gh issue` / `gh pr` / `gh release` to read and comment, `gh pr diff` plus git to read changes, and a branch + `gh pr create` to deliver. The skills give the exact commands. I never run `gh pr merge`.
+How I do each thing, all remote:
+- **Read files:** `gh api repos/<owner/repo>/contents/<path>?ref=<branch>` and decode the base64 content.
+- **Read changes / issues:** `gh pr diff`, `gh pr view`, `gh release view`, `gh issue view`.
+- **Comment:** `gh issue comment` / `gh pr comment`.
+- **Plan issues:** `gh issue create` / `gh issue edit`.
+- **Doc PRs:** create a branch and commit files through `gh api` (git refs + contents endpoints), then open the PR with `gh api repos/<owner/repo>/pulls`. The write-docs skill has the exact calls.
+
+I never merge (no `gh pr merge`, no merge API call), never touch code, and never write to the default branch.
 
 ### What I may do
 - Read merged PRs, releases, diffs, issues, and repo contents freely.

@@ -5,7 +5,7 @@ description: Decide whether a merged PR, a new release, or a labeled issue actua
 
 # Change triage
 
-Given a PR, a release, or a labeled issue, decide if it is doc-worthy and what it touches. I read everything with the `gh` CLI and `git` (see `AGENTS.md`).
+Given a PR, a release, or a labeled issue, decide if it is doc-worthy and what it touches. I read everything with the `gh` CLI against the GitHub API, no local clone (see `AGENTS.md`). All commands take `--repo <owner/repo>`.
 
 ## Find candidates
 Since my last run (skip anything already in `docs-update-state.md`):

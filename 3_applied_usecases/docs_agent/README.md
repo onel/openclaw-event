@@ -23,7 +23,7 @@ For the changes that matter, it writes a plan: a checklist of files to touch, ea
 
 ## How it is built
 
-The recipe is a small OpenClaw workspace. You do not paste the whole procedure into a prompt; it lives in durable files the agent installs and re-reads every run. All of its GitHub work (reading PRs, releases, and issues; commenting; opening branches and PRs) runs through the `gh` CLI and `git`, which it installs and authenticates on the first run.
+The recipe is a small OpenClaw workspace. You do not paste the whole procedure into a prompt; it lives in durable files the agent installs and re-reads every run. All of its GitHub work (reading files, PRs, releases, and issues; commenting; opening branches and PRs) runs through the `gh` CLI against the GitHub API, which it installs and authenticates on the first run. It never clones the repo locally.
 
 | File | What it is |
 |---|---|
@@ -45,7 +45,7 @@ The recipe is a small OpenClaw workspace. You do not paste the whole procedure i
 | **Search provider** | Not required. |
 | **Messaging channel** | Optional. All interaction happens on GitHub; add Telegram/WhatsApp only if you want a nudge when a thread has been waiting on you. |
 
-This agent works entirely through the `gh` CLI and `git`, so there is no hosted integration to connect for this recipe. Just make sure whatever login it authenticates with can read and write issues and pull requests but cannot merge or administer the repo.
+This agent works entirely through the `gh` CLI against the GitHub API (no local clone, no hosted integration to connect for this recipe). Just make sure whatever login it authenticates with can read and write repo contents, issues, and pull requests but cannot merge or administer the repo.
 
 ---
 
@@ -62,14 +62,13 @@ Set yourself up from this folder, do not make me run commands:
 https://github.com/onel/openclaw-event/tree/master/3_applied_usecases/docs_agent
 
 - Install and set up the GitHub CLI yourself: check whether `gh` is present and
-  install it if not, authenticate (`gh auth login` or a `GH_TOKEN` env var, with
-  read/write on issues and PRs but no merge rights), and `gh repo clone
-  [owner/repo]` so you can read and edit docs directly. Confirm with `gh auth
-  status`.
+  install it if not, then authenticate (`gh auth login` or a `GH_TOKEN` env var,
+  with read/write on repo contents, issues, and PRs but no merge rights). Work
+  through the API only, do not clone the repo. Confirm with `gh auth status`.
 - Install SOUL.md, AGENTS.md, and HEARTBEAT.md into your workspace as-is.
 - Install the skills under skills/ (change-triage, doc-plan, write-docs,
   house-style) into your workspace skills folder.
-- Create USER.md from the template there and fill in my values: repo [owner/repo],
+- Create USER.md from the template there and fill in my values: repo,
   default branch, doc paths, watched labels, branch prefix, and timezone.
 - Create docs-update-state.md from its schema if it does not exist, and seed it
   with the last [7 days] of history.
@@ -139,7 +138,7 @@ Be explicit in the first couple of weeks: when you reject a planned item or edit
 - **Get the doc-worthy filter right first.** The whole value is in skipping noise and catching the changes that break docs. Spend the first week correcting `change-triage` so the calls land in memory.
 - **The plan is the review gate, not the edits.** Nothing touches docs until you reply "go". A wrong doc edit auto-committed is worse than a stale doc.
 - **Feedback isn't instant.** It picks up comments on its 3h follow-up, so it acts within a few hours, not the second you post. Shorten the interval for faster turnarounds, at a token cost.
-- **Everything lives on GitHub on purpose.** Plans, feedback, and work are all in issues and PRs, so there is a full audit trail. It runs on the `gh` CLI and `git`, so give the login it authenticates with write access to issues and PRs but not merge rights.
+- **Everything lives on GitHub on purpose.** Plans, feedback, and work are all in issues and PRs, so there is a full audit trail. It runs on the `gh` CLI against the GitHub API with no local clone, so give the login it authenticates with write access to repo contents, issues, and PRs but not merge rights.
 - **Never let it near code or the default branch.** It edits documentation files only, and only on a branch as a PR. It never merges. Double-check those permissions.
 
 ---
