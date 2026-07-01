@@ -1,12 +1,12 @@
 tasks:
 - name: docs-find-work
   interval: 6h
-  prompt: "Job A: Check [owner/repo] for PRs merged into main and new releases
-    since your last run. If there are documentation-worthy changes, post a plan
-    issue and ask me to approve or request changes in the thread. If nothing new
-    or nothing is doc-worthy, do nothing."
+  prompt: "Find new work for the repo in USER.md. Check merged PRs, new releases,
+    and open issues carrying a watched label, all since your last run (skip
+    anything in docs-update-state.md). Use the change-triage and doc-plan skills.
+    Follow AGENTS.md. If nothing is doc-worthy, do nothing."
 - name: docs-followup
   interval: 3h
-  prompt: "Job B: Check the open plan issues you've created for new comments. If I
-    requested changes, update the plan. If I approved, create a branch, make the
-    doc edits, and open a PR that references the issue. Otherwise do nothing."
+  prompt: "Check comments on the plan issues and doc PRs you have open. Requested
+    changes -> revise. Approval -> use the write-docs skill. Follow AGENTS.md.
+    Otherwise do nothing."
